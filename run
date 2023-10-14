@@ -1,0 +1,9 @@
+#!/bin/bash
+cd FakePicasso
+g++ PicassoLWD.FastSimulation.Native.cpp -c -std=c++20 -fPIC
+g++ PicassoLWD.FastSimulation.Native.o -shared -o ../Example/PicassoLWD.FastSimulation.Native.dll
+cd ../Example
+g++ Example.cpp ./PicassoLWD.FastSimulation.Native.dll
+./a.out
+
+
