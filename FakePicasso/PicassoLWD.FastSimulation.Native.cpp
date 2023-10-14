@@ -1,6 +1,7 @@
 #include "PicassoLWD.FastSimulation.Native.h"
 #include "ErrorCodes.h"
 #include <vector>
+#include <algorithm>
 
 namespace {
 
